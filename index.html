@@ -2,12 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>第一个网页</title>
+    <title>主页</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+    body{
+        margin:0;
+    }
+    .sub-header{
+        height:130px;
+        background-color: #f5f5f5;
+    }
+    .container{
+        width:1200px;
+        margin:0 auto;
+    }
+    .sub-header .logo{
+        width: 200px;
+        height: 100px;
+        float: left;
+    }
+     .sub-header .menu{
+        height: 100px;
+        float: right;
+        line-height: 100px;
+    }
+    .sub-header .logo a{
+        margin-top: 22px;
+        display: inline-block;
+    }
+    /*.sub-header .logo a img{*/
+    /*    width:56px;*/
+    /*    height:56px;*/
+    /*}*/
+    .sub-header .container .menu a{
+        display: inline-block;
+        padding: 0 20px;
+        color: #333;
+        font-size: 16px;
+    }
+    .sub-header .menu a{
+        text-decoration: none;
+    }
+     .sub-header .menu a:hover{
+         color: red;
+    }
+    .intro {
+        width: 1500px;
+        margin: 0 auto; /* 将框居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-indent:2em;
+        text: text-primary;
+        /*text-align: center;*/
+    }
+    .intro1 {
+        margin: 24px auto; /* 将框居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-indent:2em;
+        text-align: center;
+        font-size: large;
+    }
+
+    .title {
+        display: inline-block;
+        font-size: large;
+        color: #333333;
+        margin: 24px 0 24px;
+    }
+    .big {
+        width: 147.83px;
+        height: 208px;
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+    }
+    .xiaotu {
+        width: 3em;
+        height: 3em;
+        display: block;
+        margin: 0 auto;
+    }
+    .sec {
+        margin: 24px 24px;
+        display: inline-block;
+    }
+
+    </style>
 </head>
 <body>
-<label for="name">Name (4 to 8 characters):</label>
-<h1>我的第一个网页</h1>
-<input type="text" id="name" name="name" required
-       minlength="4" maxlength="8" size="10">
+<div class="sub-header">
+    <div class="container">
+        <div class="logo">
+            <a href="http://www.iie.cas.cn/">
+                <img src="./static/xgs_logo.png"/>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#">首页</a>
+            <a href="https://www.bilibili.com/">已发表成果</a>
+            <a href="./ppt.html">组会内容展示</a>
+            <a href="https://www.bilibili.com/">管理员登录</a>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+<div>
+    <br/><br/>
+    <h1 class="mb-4 flex items-center text-4xl font-bold"><svg class="mr-1.5 text-green-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-tertiary" d="M15.273 18.728A6.728 6.728 0 1 1 22 11.999V12a6.735 6.735 0 0 1-6.727 6.728z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M8.727 18.728A6.728 6.728 0 1 1 15.455 12a6.735 6.735 0 0 1-6.728 6.728z" fill="currentColor"></path></svg>
+    智能计算组：</h1>
+    <p class="intro">智能计算组是一个以人工智能为主要研究方向的学术团队，主要研究方向包括计算机视觉、自然语言处理、多模态情感分析、知识图谱等等，团队成员包括博士生、硕士生、本科生等等，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果，团队成员在各个方向上都有很好的研究成果。</p>
+
+    <a class="intro1 text-danger" href="http://www.iie.cas.cn/zszpyztd/index_84623.html" >加入我们</a>
+</div>
+<br/> <br/> <br/>
+<section class="sec">
+    <h2 class="title">Computer Vision</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/shendujiance.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Depth <br/> Estimation</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/fenlei.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Image <br/> Classification</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/fenge.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Image <br/> Segmentation</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/duosucai.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>  Image-to-Image</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/jiance.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Object <br/> Detection</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/shipin.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Video <br/> Classification</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/tupiantianjia.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Unconditional Image Generation</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/fenjifenlei.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Zero-Shot Image Classification</a></header>
+       </div>
+    </div>
+</section>
+<br/>
+
+<section class="sec">
+    <h2 class="title">Nature Language Processing</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/duihua.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Conversational</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/mask.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Fill-Mask</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/wenda.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Question <br/> Answering</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/wj-czwj.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Sentence <br/> Similarity</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/zongjie.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Summarization</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/biaoge.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Table Question Answering</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/wenbenfenlei.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Text <br/> Classification</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/wenbenbianji.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Text <br/>Generation</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/fenge.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Token <br/>Classification</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/yuyanfanyi.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Translation</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/fenjifenlei.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Zero-Shot Classification</a></header>
+       </div>
+    </div>
+</section>
+<br/>
+
+<section class="sec">
+    <h2 class="title">Audio</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/yinle.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Audio <br/>Classification</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/shipin.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Audio-to-Audio</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/66.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Automatic Speech Recognition</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/yanjiang.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Text-to-Speech</a></header>
+       </div>
+    </div>
+</section>
+<br/>
+
+<section class="sec">
+    <h2 class="title">Multi-modal</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/xingtuxuetang-wenda-.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Document Question Answering</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/wj-czwj.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Feature<br/> Extraction</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/tuwenmoshi-01.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Image-to-Text</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/tuwenzixun.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Text-to-Image</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/shipin_1.png">
+           <header style="display: inline-block"><a href="https://baidu.com"><br/>Text-to-Video</a></header>
+       </div>
+         <div class="big">
+           <img class="xiaotu" src="./static/icon/wenda.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Visual Question Answering</a></header>
+       </div>
+    </div>
+</section>
+<br/>
+
+<section class="sec">
+    <h2 class="title">Tabular</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/fenlei_1.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Tabular <br/>Classification</a></header>
+       </div>
+        <div class="big">
+           <img class="xiaotu" src="./static/icon/zhexiantu.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Tabular <br/>Regression</a></header>
+       </div>
+    </div>
+</section>
+<br/>
+
+<section class="sec">
+    <h2 class="title">Reinfocement Learning</h2>
+    <div>
+       <div class="big">
+           <img class="xiaotu" src="./static/icon/jiqiren.png">
+           <header style="display: inline-block"><a href="https://baidu.com">Reinfocement <br/> Learning</a></header>
+       </div>
+    </div>
+</section>
+
 </body>
 </html>
