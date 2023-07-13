@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>组会内容展示</title>
+    <title>已发表成果</title>
       <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -51,17 +51,23 @@
      .sub-header .menu a:hover{
          color: red;
     }
-    .gezi{
+    .jiange {
         width: 1200px;
         height: 500px;
         margin: 24px auto;
     }
-    .gezi h3{
-        text-align: center;
+     .jiange h3{
         font-size: 24px;
         font-weight: 600;
         margin-top: 100px;
     }
+     .jiange a{
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 20px;
+        text-decoration: none;
+     }
     </style>
 
 </head>
@@ -82,26 +88,27 @@
         <div style="clear:both"></div>
     </div>
 </div>
-<div id="example1"></div>
-<div class="gezi">
-    <h3>虚假信息生成</h3>
-    <a class="media" href="./static/ppt.pdf"></a>
+
+<div class="jiange">
+    <h3>2023年</h3>
+    <a href="https://arxiv.org/abs/1810.04805">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a>
+    <a href="https://arxiv.org/abs/1810.04805">Learning Compact Hash Codes for Multimodal Representations Using Orthogonal Deep Structure</a>
+    <a href="https://arxiv.org/abs/1810.04805">Depression Detection via Harvesting Social Media: A Multimodal Dictionary Learning Solution</a>
+    <a href="https://arxiv.org/abs/1810.04805">Multimodal Deep Embedding via Hierarchical Grounded Compositional Semantics</a>
+
+    <h3>2022年</h3>
+    <a href="https://arxiv.org/abs/1810.04805">Learning of Multimodal Representations With Random Walks on the Click Graph</a>
+    <a href="https://arxiv.org/abs/1810.04805">Partial Multi-Modal Sparse Coding via Adaptive Similarity Structure Regularization</a>
+    <a href="https://arxiv.org/abs/1810.04805">Effective Multi-Modal Retrieval based on Stacked Auto-Encoders</a>
+    <a href="https://arxiv.org/abs/1810.04805">Sparse Multi-Modal Hashing</a>
+    <a href="https://arxiv.org/abs/1810.04805">Spectral Multimodal Hashing and Its Application to Multimedia Retrieval</a>
+
+    <h3>2021年</h3>
+    <a href="https://arxiv.org/abs/1810.04805">Learning Discriminative Binary Codes for Large-scale Cross-modal Retrieval</a>
+    <a href="https://arxiv.org/abs/1810.04805">Pairwise Relationship Guided Deep Hashing for Cross-Modal Retrieval</a>
+    <a href="https://arxiv.org/abs/1810.04805"> Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding</a>
 </div>
 
-<div class="gezi">
-    <h3>GPT的前世今生</h3>
-    <a class="media" href="./static/ppt.pdf"></a>
-</div>
-
-<div class="gezi">
-    <h3>基于GPT的文本生成</h3>
-    <a class="media" href="./static/ppt.pdf"></a>
-</div>
 </body>
 </html>
 
- <script>
-  $(function () {
-     $(".media").media({ width: '100%', height: '500px'});
-   });
-</script>
